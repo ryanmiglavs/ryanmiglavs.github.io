@@ -1,0 +1,214 @@
+/* Home Styles */
+body#home > header {
+	
+	}
+	body#home > header > h1 {
+		top: 20%;
+		width: 5em;
+		}
+		body#home > header > h1::after {
+			margin-top: -.15em;
+			}
+
+ul#manifesto {
+	
+	}
+	ul#manifesto > li {
+		height: 110vh;
+		}
+		ul#manifesto > li > figure {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 50%;
+			height: 100%;
+			overflow: hidden;
+			}
+			ul#manifesto > li:nth-child(even) > figure {
+				left: auto;
+				right: 0;
+				}
+			ul#manifesto > li > figure > img {
+				top: 0;
+				min-width: 100%;
+				min-height: 117%;
+				}
+		ul#manifesto > li > figcaption {
+			position: absolute;
+			left: auto;
+			right: 0;
+			top: 30%;
+			width: 50%;
+			padding: 2em 3em;
+			}
+			ul#manifesto > li:nth-child(even) > figcaption {
+				left: 0;
+				right: auto;
+				}
+		ul#manifesto > li#design > figure {
+			padding-top: 15%;
+			height: 100%;
+			}
+			ul#manifesto > li#design > figure > img {
+				top: 0;
+				min-width: auto;
+				min-height: auto;
+				max-width: 80%;
+				}
+		ul#manifesto > li#dream > figure {
+			
+			}
+			ul#manifesto li#dream > figure > img {
+				top: -14vh;
+				min-height: 116%;
+				}
+		ul#manifesto > li#adventure > figure {
+			
+			}
+			ul#manifesto > li#adventure > figure > img {
+				right: auto;
+				}
+		ul#manifesto > li#tell-stories > figure {
+			padding-top: 22%;
+			}
+			ul#manifesto > li#tell-stories > figure > iframe {
+				width: 80%;
+				/*height: 70%;*/
+				}
+		ul#manifesto > li#eat-and-drink > figure {
+			
+			}
+			ul#manifesto > li#eat-and-drink > figure > img {
+				top: 0;
+				}
+body#home > footer {
+	
+	}
+	body#home > footer > h4 {
+		top: 6em;
+		right: 3em;
+		font-size: 150%;
+		}
+	body#home > footer > h6#copyright {
+		bottom: 3em;
+		right: 4.5em;
+		font-weight: 500;
+		}
+
+/* Portfolio Styles */
+body#portfolio {
+	
+	}
+	body#portfolio > header {
+		min-height: 700px;
+		}
+		body#portfolio > header > h1 {
+			left: calc(50% - 14.8em);
+			width: 29.6em;
+			}
+			body#portfolio > header > h1 > strong {
+				font-size: 10rem;
+				}
+		body#portfolio > header > ul#clients {
+			
+			}
+			body#portfolio > header > ul#clients > li {
+				width: 12%;
+				height: 6em;
+				margin-left: 2em;
+				margin-right: 2em;
+				}
+				body#portfolio > header > ul#clients > li#uo {
+					display: inline-block;
+					}
+				body#portfolio > header > ul#clients > li#stand {
+					display: inline-block;
+					}
+	body#portfolio > section#subheader {
+		height: 28vw;
+		}
+		body#portfolio > section#subheader > h1 {
+			top: 30%;
+			left: 35%;
+			}
+			@media all and (max-height: 800px) {
+				body#portfolio > header > h1 {
+					top: 16%;
+					}
+				}
+		body#portfolio > section#subheader > h2 {
+			left: 35%;
+			top: calc(30% + 1.5rem);
+			}
+ol#design-stories {
+	
+	}
+	ol#design-stories > li {
+		padding: 12em 2em 6em 2em;
+		}
+		ol#design-stories > li > .title,
+		ol#design-stories > li > section.project-intro,
+		ol#design-stories > li > figure {
+			display: grid;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
+			grid-template-columns: 10% 25% 15% 15% 25% 10%;
+			}
+		ol#design-stories > li > .title {
+			margin-bottom: 11em;
+			padding-bottom: 5em;
+			padding-left: 10%;
+			}
+			ol#design-stories > li > .title > h1 {
+				padding-top: 0;
+				padding-bottom: 1em;
+				font-size: 10rem;
+				text-indent: 8rem;
+				}
+				ol#design-stories > li > .title > h1 > .number {
+					position: absolute;
+					top: -.05em;
+					left: -.125em;
+					text-indent: 0;
+					}
+				ol#design-stories > li > .title > h1 > .point {
+					position: absolute;
+					top: -.05em;
+					left: 6.7rem;
+					text-indent: 0;
+					}
+			ol#design-stories > li > .title > h2 {
+				position: absolute;
+				top: 9.5rem;
+				left: calc(10% + 8rem);
+				font-size: 2.25rem;
+				}
+		ol#design-stories > li > section.project-intro {
+			font-size: 2.25rem;
+			}
+			ol#design-stories > li > section.project-intro > * {
+				grid-column: 2 / 6;
+				}
+		ol#design-stories > li > figure {
+			
+			}
+			ol#design-stories > li > figure > img {
+				grid-column: 2 / 6;
+				}
+				ol#design-stories > li > figure > img.wide {
+					grid-column: 1 / 7;
+					}
+				ol#design-stories > li > figure > img.left {
+					grid-column: 2 / 3;
+					}
+					ol#design-stories > li > figure > img.left + figcaption,
+					ol#design-stories > li > figure > img.left + aside {
+						grid-column: 4 / 6;
+						padding-top: 10em;
+						}
+			ol#design-stories > li > figure > figcaption,
+			ol#design-stories > li > figure > aside {
+				grid-column: 3 / 5;
+				}

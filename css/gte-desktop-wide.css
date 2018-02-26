@@ -1,0 +1,47 @@
+/* Portfolio Styles */
+body#portfolio {
+	
+	}
+	body#portfolio > header {
+		
+		}
+		body#portfolio > header > h1 {
+			top: 30%;
+			}
+		body#portfolio > header > h3 {
+			bottom: 15em;
+			}
+	body#portfolio > header > ul#clients {
+		
+		}
+		body#portfolio > header > ul#clients > li {
+			width: 12em;
+			height: 10em;
+			}
+	body#portfolio > section#subheader {
+		
+		}
+		body#portfolio > section#subheader > h1 {
+			left: 41%;
+			top: 35%;
+			font-size: 300%;
+			}
+		body#portfolio > section#subheader > h2 {
+			left: 40.9%;
+			top: calc(35% + 2.5rem);
+			font-size: 200%;
+			}
+
+ol#design-stories {
+	
+	}
+	ol#design-stories > li {
+		
+		}
+		ol#design-stories > li > figure {
+			
+			}
+			ol#design-stories > li > figure > figcaption,
+			ol#design-stories > li > figure > aside {
+				font-size: 130%;
+				}

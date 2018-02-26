@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="23px" viewBox="0 0 61 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>scroll-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-689.000000, -908.000000)" fill="#002162">
+            <polygon id="scroll-arrow" transform="translate(719.744000, 919.452000) rotate(-270.000000) translate(-719.744000, -919.452000) " points="711.536 889.536 708.872 891.264 726.8 919.344 708.872 947.64 711.536 949.368 730.616 919.344"></polygon>
+        </g>
+    </g>
+</svg>

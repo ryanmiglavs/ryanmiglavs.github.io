@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="6px" viewBox="0 0 186 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Line Decoration</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-967.000000, -1204.000000)">
+            <g id="DESIGN" transform="translate(0.000000, 985.000000)">
+                <g id="Text" transform="translate(892.000000, 168.000000)">
+                    <g id="Heading" transform="translate(75.000000, 0.000000)">
+                        <g id="Line-Decoration" transform="translate(0.000000, 51.000000)">
+                            <path d="M6.5,3 L181.511428,3" id="Line" stroke="#002162" stroke-width="2" stroke-linecap="square"></path>
+                            <circle id="Oval" fill="#002162" cx="183" cy="3" r="3"></circle>
+                            <circle id="Oval-Copy" fill="#002162" cx="3" cy="3" r="3"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
