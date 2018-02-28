@@ -15,3 +15,96 @@ body#portfolio {
 				width: 9em;
 				height: 6em;
 				}
+
+
+ol#design-stories > li > .title {
+	margin-bottom: 11em;
+	padding-bottom: 5em;
+	}
+	ol#design-stories > li > .title > h1 {
+		grid-column: 2 / 6;
+		padding-top: 0;
+		padding-bottom: 1em;
+		padding-left: 8rem;
+		font-size: 9rem;
+		}
+		ol#design-stories > li > .title > h1 > .number {
+			position: absolute;
+			top: -.12em;
+			left: -.125em;
+			text-indent: 0;
+			}
+		ol#design-stories > li > .title > h1 > .point {
+			position: absolute;
+			top: 0;
+			left: 6.7rem;
+			text-indent: 0;
+			}
+	ol#design-stories > li > .title > h2 {
+		position: absolute;
+		top: 9.5rem;
+		left: 8rem;
+		font-size: 2.25rem;
+		}
+
+ol#design-stories > li#mazamas-story {
+	
+	}
+	ol#design-stories > li#mazamas-story > .title > h1 > .number {
+		top: -.1em;
+		}
+	ol#design-stories > li#mazamas-story > .title > h1 > .point {
+		top: -.25rem;
+		left: 6.7rem;
+		}
+	ol#design-stories > li#mazamas-story > .title > h2 {
+		top: 7.5rem;
+		left: 11.5rem;
+		text-indent: -3.5rem;
+		line-height: 1.55;
+		}
+ol#design-stories > li#news-app-story {
+	
+	}
+	ol#design-stories > li#news-app-story > .title > h1 {
+		max-width: 7em;
+		padding-left: 14rem;
+		padding-bottom: .5em;
+		text-indent: -4rem;
+		line-height: .75;
+		}
+		ol#design-stories > li#news-app-story > .title > h1 > .number {
+			left: -.4rem;
+			}
+		ol#design-stories > li#news-app-story > .title > h1 > .point {
+			top: 0;
+			left: .475em;
+			}
+	ol#design-stories > li#news-app-story > .title > h2 {
+		top: 14rem;
+		left: 0;
+		}
+ol#design-stories > li#occ-story {
+	
+	}
+	ol#design-stories > li#occ-story > .title {
+		background-position-x: calc(10% + 7.5rem);
+		}
+		ol#design-stories > li#occ-story > .title > h1 {
+			max-width: 7em;
+			padding-left: .6em;
+			padding-bottom: 0;
+			}
+			ol#design-stories > li#occ-story > .title > h1 > .number {
+				
+				}
+			ol#design-stories > li#occ-story > .title > h1 > .point {
+				top: -.1em;
+				left: .35em;
+				}
+		ol#design-stories > li#occ-story > .title > h2 {
+			top: 7.45em;
+			left: 14em;
+			width: 14em;
+			line-height: 1.167;
+			}

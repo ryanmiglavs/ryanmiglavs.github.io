@@ -101,6 +101,7 @@
 			// Portfolio animations
 			if (document.body.id == 'portfolio') {
 				
+				// TODO: Move these out of the scroll event!
 				//var intros = [].slice.call(document.getElementsByClassName('project-intro'));
 				var imgs = [].slice.call(document.getElementsByTagName('img'));
 				var figcaptions = [].slice.call(document.getElementsByTagName('figcaption'));
@@ -119,15 +120,18 @@
 					}
 				});
 				
-				// Adjust translateY() on imgs
-	//			for (i=0; i<imgs.length; ++i) {
-	//				var img = imgs[i];
-	//				var offset = img.getBoundingClientRect().top;
-	//				
-	//				if (img && (offset < window.innerHeight + 200) && (offset > window.innerHeight * -1) ) {
-	//					img.style.transform = 'translateY(' + (offset * speed * .75) + 'px)';
-	//				}
-	//			}
+				// Adjust opacity on imgs
+				// It seems animations are not performant on the imgs,
+				// mainly due to the large drop-shadows.
+//				imgs.forEach(function(img) {
+//					var offset = img.getBoundingClientRect().top;
+//					
+//					if ( (offset < window.innerHeight + 200) && (offset > 0) ) {
+//						img.style.opacity = 1 / (offset/80);
+//					} else {
+//						img.style.opacity = 1;
+//					}
+//				});
 				
 				// Adjust opacity and translateY on figcaptions and asides
 				var targetOffset = window.innerHeight * .65;

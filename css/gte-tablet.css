@@ -169,33 +169,13 @@ ol#design-stories {
 			grid-template-columns: 10% 25% 15% 15% 25% 10%;
 			}
 		ol#design-stories > li > .title {
-			margin-bottom: 11em;
-			padding-bottom: 5em;
-			padding-left: 10%;
+			
 			}
 			ol#design-stories > li > .title > h1 {
-				padding-top: 0;
-				padding-bottom: 1em;
-				font-size: 10rem;
-				text-indent: 8rem;
+				grid-column: 2 / 6;
 				}
-				ol#design-stories > li > .title > h1 > .number {
-					position: absolute;
-					top: -.05em;
-					left: -.125em;
-					text-indent: 0;
-					}
-				ol#design-stories > li > .title > h1 > .point {
-					position: absolute;
-					top: -.05em;
-					left: 6.7rem;
-					text-indent: 0;
-					}
 			ol#design-stories > li > .title > h2 {
-				position: absolute;
-				top: 9.5rem;
-				left: calc(10% + 8rem);
-				font-size: 2.25rem;
+				grid-column: 2 / 6;
 				}
 		ol#design-stories > li > section.project-intro {
 			font-size: 2.25rem;

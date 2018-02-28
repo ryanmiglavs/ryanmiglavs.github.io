@@ -3,11 +3,17 @@
 	--card-box-shadow: 0px 8px 18px rgba(0,0,0,0.5), 0px 30px 58px rgba(0,0,0,0.5);
 	--card-small-border-radius: 12px;
 	--card-large-border-radius: 40px;
+	--font-family-avenir: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-family-hoefler-italic: HoeflerText-Italic, 'Hoefler Text', Baskerville, serif;
+	--font-family-bodoni-old-style: 'Bodoni 72 Oldstyle', 'Bodoni 72', Bodoni, 'Bodoni MT', serif;
+	--font-family-bodoni-regular: 'Bodoni 72', Bodoni, 'Bodoni MT', serif;
 	}
-
+figure {
+	display: none !important;
+}
 /* General Styles */
 html {
-	font: 14px/1.4 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font: 14px/1.4 var(--font-family-avenir);
 	font-weight: 400;
 	color: #002162;
 	}
@@ -191,7 +197,7 @@ ul#manifesto {
 					/* & */
 					position: relative;
 					top: -.2em;
-					font: italic 24px HoeflerText-Italic, 'Hoefler Text', Baskerville, serif;
+					font: italic 24px var(--font-family-hoefler-italic);
 					color: #fff;
 					}
 			ul#manifesto > li#eat-and-drink > figure {
@@ -379,24 +385,24 @@ ol#design-stories {
 			}
 		ol#design-stories > li > .title > h1 {
 			position: relative;
-			margin: 0;
-			padding-top: 1.75em;
-			font: 400 4rem/1 'Bodoni 72 Oldstyle';;
+			margin: 0 0 .25em 0;
+			padding-top: 2em;
+			font: 400 4rem/.82 var(--font-family-bodoni-old-style);
 			}
 			ol#design-stories > li > .title > h1 > .number {
 				position: absolute;
 				top: 0;
-				left: -.1em;
+				left: 0;
 				margin-bottom: -.1em;
-				font-family: 'Bodoni 72';
-				font-size: 200%;
+				font-family: var(--font-family-bodoni-regular);
+				font-size: 205%;
 				line-height: 1;
 				}
 			ol#design-stories > li > .title > h1 > .point {
 				position: absolute;
-				top: 0;
-				left: .35em;
-				font-size: 200%;
+				top: .1em;
+				left: .475em;
+				font-size: 205%;
 				}
 		ol#design-stories > li > .title > h2 {
 			margin: 0;
@@ -409,7 +415,6 @@ ol#design-stories {
 			font-size: 1.5rem;
 			line-height: 1.333;
 			background: url(../img/line-decoration-white.svg) center bottom no-repeat;
-			transition: all 1s ease 0s;
 			}
 			ol#design-stories > li > section.project-intro.not-yet-visible {
 				
@@ -419,7 +424,7 @@ ol#design-stories {
 					transform: translateY(100px);
 					}
 			ol#design-stories > li > section.project-intro > * {
-				transition: all 1s ease 0;
+				transition: opacity 1s ease 0, transform 1s ease 0;
 				}
 				ol#design-stories > li > section.project-intro > * + * {
 					transition-delay: .3s;
@@ -440,10 +445,10 @@ ol#design-stories {
 						transition: none;
 						}
 			ol#design-stories > li > section.project-intro > p {
-				margin-bottom: 1.2em;
+				margin: 0 0 1.4em 0;
 				}
 			ol#design-stories > li > section.project-intro > ul {
-				margin-bottom: 1.2em;
+				margin-bottom: 1.4em;
 				list-style: disc;
 				}
 		ol#design-stories > li > figure {
@@ -477,11 +482,11 @@ ol#design-stories {
 		ol#design-stories > li#mazamas-story {
 			background: #182C3C;
 			}
-			ol#design-stories > li#mazamas-story > h1 > .number {
-				
+			ol#design-stories > li#mazamas-story > .title > h1 > .number {
+				left: -.1em;
 				}
-			ol#design-stories > li#mazamas-story > h1 > .point {
-				
+			ol#design-stories > li#mazamas-story > .title > h1 > .point {
+				left: .35em;
 				}
 		ol#design-stories > li#news-app-story {
 			background: #3D1218;
