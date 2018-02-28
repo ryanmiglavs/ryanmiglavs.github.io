@@ -107,11 +107,14 @@
 				var asides = [].slice.call(document.getElementsByTagName('aside'));
 				var allCaptions = figcaptions.concat(asides);
 				
+				// Add and remove animation-triggering visibility class on
+				// project intro sections.
 				intros.forEach(function(intro) {
-					var visible = (intro.getBoundingClientRect().top < window.innerHeight - 200);
-					if (visible) {
+					var offset = intro.getBoundingClientRect().top;
+					
+					if (offset < window.innerHeight - 200) {
 						intro.classList.remove('not-yet-visible');
-					} else {
+					} else if (offset > window.innerHeight + 200) {
 						intro.classList.add('not-yet-visible');
 					}
 				});
