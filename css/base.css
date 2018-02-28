@@ -409,7 +409,27 @@ ol#design-stories {
 			font-size: 1.5rem;
 			line-height: 1.333;
 			background: url(../img/line-decoration-white.svg) center bottom no-repeat;
+			transition: all 1s ease 0s;
 			}
+			ol#design-stories > li > section.project-intro.not-yet-visible {
+				
+				}
+				ol#design-stories > li > section.project-intro.not-yet-visible > * {
+					opacity: 0;
+					transform: translateY(100px);
+					}
+			ol#design-stories > li > section.project-intro > * {
+				transition: all 1s ease 0;
+				}
+				ol#design-stories > li > section.project-intro > * + * {
+					transition-delay: .3s;
+					}
+				ol#design-stories > li > section.project-intro > * + * + * {
+					transition-delay: .6s;
+					}
+				ol#design-stories > li > section.project-intro > * + * + * + * {
+					transition-delay: .9s;
+					}
 			ol#design-stories > li > section.project-intro > ul {
 				list-style: disc;
 				}

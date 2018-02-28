@@ -13,6 +13,7 @@
 	var header = {};
 	var h1 = {};
 	var manifestoLis = [];
+	var intros = [];
 	
 	var prefersReducedMotion = matchMedia('(prefers-reduced-motion)');
 	var isSmoothScrollSupported = 'scrollBehavior' in document.documentElement.style;
@@ -29,6 +30,20 @@
 			manifestoLis = document.getElementById('manifesto')
 				? document.getElementById('manifesto').getElementsByTagName('li')
 				: null;
+			
+			// TODO: Clean these up
+			intros = [].slice.call(document.getElementsByClassName('project-intro'));
+			var imgs = [].slice.call(document.getElementsByTagName('img'));
+			var figcaptions = [].slice.call(document.getElementsByTagName('figcaption'));
+			var asides = [].slice.call(document.getElementsByTagName('aside'));
+			var allCaptions = figcaptions.concat(asides);
+			
+			// Hide project intros initially, so they can appear when they scroll in.
+			intros.forEach(function(intro) {
+				intro.classList.add('not-yet-visible');
+			});
+
+			
 			
 			// I'm only using standard browser-supported smooth-scrolling.
 			if (isSmoothScrollSupported) {
@@ -85,10 +100,21 @@
 			
 			// Portfolio animations
 			if (document.body.id == 'portfolio') {
-				var imgs = document.getElementsByTagName('img');
+				
+				//var intros = [].slice.call(document.getElementsByClassName('project-intro'));
+				var imgs = [].slice.call(document.getElementsByTagName('img'));
 				var figcaptions = [].slice.call(document.getElementsByTagName('figcaption'));
 				var asides = [].slice.call(document.getElementsByTagName('aside'));
 				var allCaptions = figcaptions.concat(asides);
+				
+				intros.forEach(function(intro) {
+					var visible = (intro.getBoundingClientRect().top < window.innerHeight - 200);
+					if (visible) {
+						intro.classList.remove('not-yet-visible');
+					} else {
+						intro.classList.add('not-yet-visible');
+					}
+				});
 				
 				// Adjust translateY() on imgs
 	//			for (i=0; i<imgs.length; ++i) {
@@ -100,7 +126,7 @@
 	//				}
 	//			}
 				
-				// Adjust opacity on figcaptions and asides
+				// Adjust opacity and translateY on figcaptions and asides
 				var targetOffset = window.innerHeight * .65;
 				for (i=0; i<allCaptions.length; ++i) {
 					var caption = allCaptions[i];
