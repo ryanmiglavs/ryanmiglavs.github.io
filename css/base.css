@@ -422,13 +422,13 @@ ol#design-stories {
 				transition: all 1s ease 0;
 				}
 				ol#design-stories > li > section.project-intro > * + * {
-					transition-delay: .25s;
+					transition-delay: .3s;
 					}
 				ol#design-stories > li > section.project-intro > * + * + * {
-					transition-delay: .4s;
+					transition-delay: .45s;
 					}
 				ol#design-stories > li > section.project-intro > * + * + * + * {
-					transition-delay: .5s;
+					transition-delay: .55s;
 					}
 			ol#design-stories > li > section.project-intro > ul {
 				list-style: disc;
