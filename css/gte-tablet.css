@@ -1,3 +1,8 @@
+/* Variable overrides */
+:root {
+	--card-box-shadow: 0px 8px 28px rgba(0,0,0,0.5), 0px 50px 78px rgba(0,0,0,0.5);
+	}
+
 /* Home Styles */
 body#home > header {
 	
@@ -103,15 +108,22 @@ body#portfolio {
 	body#portfolio > header {
 		min-height: 700px;
 		}
+		body#portfolio > header::after {
+			bottom: 1.8em;
+			}
 		body#portfolio > header > h1 {
+			top: 24%;
 			left: calc(50% - 14.8em);
 			width: 29.6em;
 			}
 			body#portfolio > header > h1 > strong {
 				font-size: 10rem;
 				}
+		body#portfolio > header > h3 {
+			bottom: 11em;
+			}
 		body#portfolio > header > ul#clients {
-			
+			bottom: 7em;
 			}
 			body#portfolio > header > ul#clients > li {
 				width: 12%;

@@ -81,6 +81,42 @@
 					}
 				}
 			}
+			
+			
+			if (document.body.id == 'portfolio') {
+			
+				// Adjust translateY() property on imgs, figcaptions, and asides
+				var imgs = document.getElementsByTagName('img');
+				var figcaptions = document.getElementsByTagName('figcaption');
+				var asides = document.getElementsByTagName('aside');
+				
+				// Adjust translateY() on imgs
+	//			for (i=0; i<imgs.length; ++i) {
+	//				var img = imgs[i];
+	//				var offset = img.getBoundingClientRect().top;
+	//				
+	//				if (img && (offset < window.innerHeight + 200) && (offset > window.innerHeight * -1) ) {
+	//					img.style.transform = 'translateY(' + (offset * speed * .75) + 'px)';
+	//				}
+	//			}
+				
+				// Adjust opacity on figcaptions
+				var targetOffset = window.innerHeight * .65;
+				for (i=0; i<figcaptions.length; ++i) {
+					var figcaption = figcaptions[i];
+					var offset = figcaption.getBoundingClientRect().top;
+					
+					if ( offset > (targetOffset) ) {
+						figcaption.style.opacity = 1 / ( (offset - targetOffset) / 80);
+					} else {
+						figcaption.style.opacity = 1;
+					}
+					
+					if ( (offset < window.innerHeight + 200) && (offset > window.innerHeight * -1) ) {
+						figcaption.style.transform = 'translateY(' + (offset * speed * .5) + 'px)';
+					}
+				}
+			}
 		}
 	}	
 })();

@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-	--card-box-shadow: 0px 8px 28px rgba(0,0,0,0.5), 0px 50px 78px rgba(0,0,0,0.5);
+	--card-box-shadow: 0px 8px 18px rgba(0,0,0,0.5), 0px 30px 58px rgba(0,0,0,0.5);
 	--card-small-border-radius: 12px;
 	--card-large-border-radius: 40px;
 	}
@@ -246,11 +246,12 @@ body#portfolio {
 		overflow: hidden;
 		}
 		body#portfolio > header::after {
+			bottom: 4.8em;
 			background-image: url(../img/scroll-arrow-white.svg);
 			}
 		body#portfolio > header > h1 {
 			position: absolute;
-			top: 24%;
+			top: 18%;
 			left: calc(50% - 8.9em);
 			width: 17.8em;
 			font-weight: 300;
@@ -280,7 +281,7 @@ body#portfolio {
 				}
 		body#portfolio > header > h3 {
 			position: absolute;
-			bottom: 11em;
+			bottom: 14em;
 			left: 0;
 			right: 0;
 			font-weight: 300;
@@ -290,7 +291,7 @@ body#portfolio {
 			}
 		body#portfolio > header > ul#clients {
 			position: absolute;
-			bottom: 7em;
+			bottom: 10em;
 			margin: 0;
 			padding: 0;
 			width: 100%;
@@ -403,7 +404,7 @@ ol#design-stories {
 			}
 		ol#design-stories > li > section.project-intro {
 			margin-bottom: 5em;
-			padding-bottom: 3em;
+			padding-bottom: 5.5em;
 			font-weight: 500;
 			font-size: 1.5rem;
 			line-height: 1.333;
@@ -451,4 +452,7 @@ ol#design-stories {
 				}
 		ol#design-stories > li#news-app-story {
 			background: #3D1218;
+			}
+		ol#design-stories > li#occ-story {
+			background: #2C353A;
 			}
