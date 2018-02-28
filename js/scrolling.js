@@ -83,12 +83,12 @@
 			}
 			
 			
+			// Portfolio animations
 			if (document.body.id == 'portfolio') {
-			
-				// Adjust translateY() property on imgs, figcaptions, and asides
 				var imgs = document.getElementsByTagName('img');
-				var figcaptions = document.getElementsByTagName('figcaption');
-				var asides = document.getElementsByTagName('aside');
+				var figcaptions = [].slice.call(document.getElementsByTagName('figcaption'));
+				var asides = [].slice.call(document.getElementsByTagName('aside'));
+				var allCaptions = figcaptions.concat(asides);
 				
 				// Adjust translateY() on imgs
 	//			for (i=0; i<imgs.length; ++i) {
@@ -100,20 +100,20 @@
 	//				}
 	//			}
 				
-				// Adjust opacity on figcaptions
+				// Adjust opacity on figcaptions and asides
 				var targetOffset = window.innerHeight * .65;
-				for (i=0; i<figcaptions.length; ++i) {
-					var figcaption = figcaptions[i];
-					var offset = figcaption.getBoundingClientRect().top;
+				for (i=0; i<allCaptions.length; ++i) {
+					var caption = allCaptions[i];
+					var offset = caption.getBoundingClientRect().top;
 					
 					if ( offset > (targetOffset) ) {
-						figcaption.style.opacity = 1 / ( (offset - targetOffset) / 80);
+						caption.style.opacity = 1 / ( (offset - targetOffset) / 80);
 					} else {
-						figcaption.style.opacity = 1;
+						caption.style.opacity = 1;
 					}
 					
 					if ( (offset < window.innerHeight + 200) && (offset > window.innerHeight * -1) ) {
-						figcaption.style.transform = 'translateY(' + (offset * speed * .5) + 'px)';
+						caption.style.transform = 'translateY(' + (offset * speed * .5) + 'px)';
 					}
 				}
 			}
