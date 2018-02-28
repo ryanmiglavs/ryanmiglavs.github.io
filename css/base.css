@@ -424,13 +424,26 @@ ol#design-stories {
 				ol#design-stories > li > section.project-intro > * + * {
 					transition-delay: .3s;
 					}
+					ol#design-stories > li > section.project-intro.not-yet-visible > * + * {
+						transition: none;
+						}
 				ol#design-stories > li > section.project-intro > * + * + * {
 					transition-delay: .45s;
 					}
+					ol#design-stories > li > section.project-intro.not-yet-visible > * + * + * {
+						transition: none;
+						}
 				ol#design-stories > li > section.project-intro > * + * + * + * {
 					transition-delay: .55s;
 					}
+					ol#design-stories > li > section.project-intro.not-yet-visible > * + * + * + * {
+						transition: none;
+						}
+			ol#design-stories > li > section.project-intro > p {
+				margin-bottom: 1.2em;
+				}
 			ol#design-stories > li > section.project-intro > ul {
+				margin-bottom: 1.2em;
 				list-style: disc;
 				}
 		ol#design-stories > li > figure {

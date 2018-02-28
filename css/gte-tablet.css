@@ -218,7 +218,7 @@ ol#design-stories {
 					ol#design-stories > li > figure > img.left + figcaption,
 					ol#design-stories > li > figure > img.left + aside {
 						grid-column: 4 / 6;
-						padding-top: 10em;
+						padding-top: 12em;
 						}
 			ol#design-stories > li > figure > figcaption,
 			ol#design-stories > li > figure > aside {
