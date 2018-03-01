@@ -8,9 +8,6 @@
 	--font-family-bodoni-old-style: 'Bodoni 72 Oldstyle', 'Bodoni 72', Bodoni, 'Bodoni MT', serif;
 	--font-family-bodoni-regular: 'Bodoni 72', Bodoni, 'Bodoni MT', serif;
 	}
-figure {
-	display: none !important;
-}
 /* General Styles */
 html {
 	font: 14px/1.4 var(--font-family-avenir);
@@ -451,18 +448,59 @@ ol#design-stories {
 				margin-bottom: 1.4em;
 				list-style: disc;
 				}
+		ol#design-stories > li > a.view-samples:link,
+		ol#design-stories > li > a.view-samples:visited {
+			display: block;
+			color: #fff;
+			font-size: 2rem;
+			text-decoration: none;
+			text-align: center;
+			}
+			ol#design-stories > li > a.view-samples:link::after {
+				display: block;
+				width: 38px;
+				height: 38px;
+				margin: .5em auto 0 auto;
+				padding: 0;
+				content: "";
+				background: url(../img/portfolio/plus-circle.svg) center no-repeat;
+				transition: transform .25s ease;
+				}
+		ol#design-stories > li > a.view-samples:hover {
+			
+			}
+			ol#design-stories > li > a.view-samples:hover::after {
+				transform: rotate(360deg);
+				}
+		ol#design-stories > li > a.view-samples:active {
+			
+			}
 		ol#design-stories > li > figure {
 			margin-bottom: 5em;
 			padding-bottom: 3em;
 			background: url(../img/line-decoration-white.svg) center bottom no-repeat;
-			/*overflow: hidden;*/
 			}
-			ol#design-stories > li > figure::after {
-				display: block;
+			/* Styles for JS-enabled reveal toggles */
+			.js ol#design-stories > li > figure {
 				height: 0;
-				content: "";
-				clear: both;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				opacity: 0;
+				transform: translateY(-100px);
+				transition: all .5s ease 0;
+				overflow: hidden;
 				}
+				.js ol#design-stories > li.expanded > figure {
+					height: auto;
+					margin-bottom: 5em;
+					padding-bottom: 3em;
+					opacity: 1;
+					transform: translateY(0);
+					overflow: visible;
+					}
+				.js ol#design-stories > li.expanded > a.view-samples {
+					display: none;
+					}
 			ol#design-stories > li > figure > img {
 				display: block;
 				max-width: 100%;
