@@ -371,7 +371,7 @@ ol#design-stories {
 		position: relative;
 		margin: 0;
 		padding: .5em 1em 4em 1em;
-		overflow: hidden;
+		/*overflow: hidden;*/
 		}
 		ol#design-stories > li > .title {
 			position: relative;
@@ -451,6 +451,8 @@ ol#design-stories {
 		ol#design-stories > li > a.view-samples:link,
 		ol#design-stories > li > a.view-samples:visited {
 			display: block;
+			width: 8em;
+			margin: 0 auto 1em auto;
 			color: #fff;
 			font-size: 2rem;
 			text-decoration: none;
@@ -499,8 +501,19 @@ ol#design-stories {
 					overflow: visible;
 					}
 				.js ol#design-stories > li.expanded > a.view-samples {
-					display: none;
+					position: -webkit-sticky;
+					position: sticky;
+					top: -1.5em;
+					color: transparent;
+					z-index: 100;
 					}
+					.js ol#design-stories > li.expanded > a.view-samples:link::after {
+						opacity: 1;
+						transform: rotate(-45deg);
+						}
+					.js ol#design-stories > li.expanded > a.view-samples:hover::after {
+						transform: rotate(-135deg);
+						}
 			ol#design-stories > li > figure > img {
 				display: block;
 				max-width: 100%;

@@ -18,7 +18,12 @@
 			var viewSamplesLink= li.querySelector('a.view-samples');
 			
 			viewSamplesLink.addEventListener('click', function(e) {
-				li.classList.add('expanded');
+				if ( li.classList.contains('expanded') ) {
+					li.classList.remove('expanded');
+				} else {
+					li.classList.add('expanded');
+				}
+				
 				e.preventDefault();
 			});
 		});
