@@ -192,7 +192,7 @@ ol#design-stories {
 				ol#design-stories > li > figure > img.wide {
 					grid-column: 1 / 7;
 					}
-				ol#design-stories > li > figure > img.left {
+				ol#design-stories > li > figure > .left {
 					grid-column: 2 / 3;
 					}
 					ol#design-stories > li > figure > img.left + figcaption,
@@ -200,6 +200,9 @@ ol#design-stories {
 						grid-column: 4 / 6;
 						padding-top: 12em;
 						}
+				ol#design-stories > li > figure > .right {
+					grid-column: 4 / 6;
+					}
 			ol#design-stories > li > figure > figcaption,
 			ol#design-stories > li > figure > aside {
 				grid-column: 3 / 5;
@@ -248,3 +251,28 @@ ol#design-stories {
 				ol#design-stories > li#news-app-story > figure > img#world-page {
 					margin-top: -80em;
 					}
+	ol#design-stories > li#occ-story {
+		
+		}
+		ol#design-stories > li#occ-story > figure#key-tasks {
+			
+			}
+			ol#design-stories > li#occ-story > figure#key-tasks > img {
+				grid-column: 2 / 4;
+				}
+			ol#design-stories > li#occ-story > figure#key-tasks > figcaption {
+				grid-column: 4 / 8;
+				margin-top: 6em;
+				}
+		ol#design-stories > li#occ-story > figure#eat-now {
+			
+			}
+			ol#design-stories > li#occ-story > figure#eat-now > img#eat-now-cta-img {
+				grid-row: 1 / 2;
+				}
+			ol#design-stories > li#occ-story > figure#eat-now > img#eat-now-phone-img {
+				grid-row: 1 / 4;
+				}
+			ol#design-stories > li#occ-story > figure#eat-now > img#eat-now-caption {
+				grid-row: 1 / 2;
+				}
