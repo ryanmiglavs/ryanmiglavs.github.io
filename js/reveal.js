@@ -28,6 +28,8 @@
 					li.classList.remove('expanded');
 					
 					if ( window.pageYOffset > (offsetTop + window.innerHeight) ) {
+						console.log(offsetTop);
+						console.log(li);
 						if (!prefersReducedMotion.matches && isSmoothScrollSupported) {
 							window.scrollTo({
 								'behavior': 'smooth',
