@@ -153,6 +153,16 @@ body#portfolio {
 			left: 35%;
 			top: calc(30% + 1.5rem);
 			}
+body#portfolio > footer {
+
+	}
+	body#portfolio > footer > #signing-off {
+		top: 4em;
+		left: 2em;
+		}
+		body#portfolio > footer > #signing-off > h5 {
+			font-size: 3rem;
+			}
 ol#design-stories {
 	
 	}
@@ -275,4 +285,10 @@ ol#design-stories {
 				}
 			ol#design-stories > li#occ-story > figure#eat-now > img#eat-now-caption {
 				grid-row: 1 / 2;
+				}
+		ol#design-stories > li#occ-story > figure#occ-site-link {
+			display: block;
+			}
+			ol#design-stories > li#occ-story > figure#occ-site-link > a.site-link {
+				width: 10em;
 				}

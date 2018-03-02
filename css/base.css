@@ -40,6 +40,42 @@ body {
 abbr {
 	cursor: help;
 	}
+a.site-link:link,
+a.site-link:visited {
+	position: relative;
+	display: block;
+	min-width: 9em;
+	padding: 1.4em 3em;
+	font-weight: 600;
+	font-size: 1.25rem;
+	letter-spacing: .075em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000000;
+	transition: background-color .25s ease;
+	}
+	a.site-link::after {
+		position: absolute;
+		top: 8px;
+		right: 9px;
+		bottom: 8px;
+		left: 9px;
+		content: " ";
+		border: 3px solid #2c353a;
+		pointer-events: none;
+		transition: border-color .25s ease;
+		}
+a.site-link:hover {
+	background-color: #10171b;
+	}
+	a.site-link:hover::after {
+		border-color: #667680;
+		}
+a.site-link:active {
+	background-color: #000;
+	}
 
 /* Home Styles */
 
@@ -362,6 +398,37 @@ body#portfolio {
 			font-size: 1.25rem;
 			font-weight: 400;
 			}
+body#portfolio > footer {
+	position: relative;
+	color: #000;
+	}
+	body#portfolio > footer > img {
+		display: block;
+		width: 100%;
+		}
+	body#portfolio > footer > #signing-off {
+		position: absolute;
+		top: 1em;
+		left: 1em;
+		}
+		body#portfolio > footer > #signing-off > h5 {
+			margin: 0;
+			font: italic 400 1.4rem/1 var(--font-family-bodoni-old-style);
+			}
+		body#portfolio > footer > #signing-off a:link,
+		body#portfolio > footer > #signing-off a:visited {
+			color: #1c4466;
+			text-decoration: none;
+			border-bottom: 1px solid #000;
+			transition: all .25s ease;
+			}
+		body#portfolio > footer > #signing-off a:hover {
+			color: #00284a;
+			}
+		body#portfolio > footer > #signing-off a:active {
+			color: #205e92;
+			border-color: #205e92;
+			}
 
 ol#design-stories {
 	margin: 0;
@@ -538,6 +605,9 @@ ol#design-stories {
 				max-width: 33em;
 				margin: 0 auto 6em auto;
 				text-align: center;
+				}
+			ol#design-stories > li > figure > a.site-link {
+				margin: 0 auto 3rem auto;
 				}
 		ol#design-stories > li#mazamas-story {
 			background: #182C3C;
