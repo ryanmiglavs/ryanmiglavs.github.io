@@ -23,13 +23,12 @@
 			
 			viewSamplesLink.addEventListener('click', function(e) {
 				if ( li.classList.contains('expanded') ) {
-					var offsetTop = getPageOffset(li.querySelector('.project-intro'));
+					var intro = li.querySelector('.project-intro');
+					var offsetTop = getPageOffset(intro);
 					
 					li.classList.remove('expanded');
 					
-					if ( window.pageYOffset > (offsetTop + window.innerHeight) ) {
-						console.log(offsetTop);
-						console.log(li);
+					if ( window.pageYOffset > (offsetTop + intro.offsetHeight) ) {
 						if (!prefersReducedMotion.matches && isSmoothScrollSupported) {
 							window.scrollTo({
 								'behavior': 'smooth',
