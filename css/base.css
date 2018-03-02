@@ -37,6 +37,9 @@ body {
 			body.scrolled header::after {
 				opacity: 0;
 				}
+abbr {
+	cursor: help;
+	}
 
 /* Home Styles */
 

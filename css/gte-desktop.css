@@ -108,3 +108,15 @@ ol#design-stories > li#occ-story {
 			width: 14em;
 			line-height: 1.167;
 			}
+ol#design-stories > li#news-app-story {
+	
+	}
+	ol#design-stories > li#news-app-story > figure > img#top-page {
+		margin-top: -18em;
+		}
+	ol#design-stories > li#news-app-story > figure > aside#choose-title-color-etc {
+		margin-top: -115em;
+		}
+	ol#design-stories > li#news-app-story > figure > img#world-page {
+		margin-top: -95em;
+		}

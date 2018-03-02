@@ -196,7 +196,7 @@ ol#design-stories {
 					grid-column: 2 / 3;
 					}
 					ol#design-stories > li > figure > img.left + figcaption,
-					ol#design-stories > li > figure > img.left + aside {
+					ol#design-stories > li > figure > img.left + aside { 
 						grid-column: 4 / 6;
 						padding-top: 12em;
 						}
@@ -208,24 +208,43 @@ ol#design-stories {
 			
 			}
 			ol#design-stories > li#news-app-story > figure {
-				grid-template-columns: 10% 5% 12.5% 6.25% 6.25% 10% 10% 6.25% 6.25% 12.5% 5% 10%;
+				grid-template-columns: 10% 5% 12.5% 7.5% 7.5% 7.5% 7.5% 7.5% 7.5% 12.5% 5% 10%;
 				}
 				ol#design-stories > li#news-app-story > figure > img {
 					grid-column: 2 / 12;
 					}
-				ol#design-stories > li#news-app-story > figure > img.left.two-up {
+				ol#design-stories > li#news-app-story > figure > .left.two-up {
 					grid-column: 3 / 6;
 					}
-				ol#design-stories > li#news-app-story > figure > img.right.two-up {
+					/*ol#design-stories > li#news-app-story > figure > aside.left.two-up {
+						grid-column: 2 / 7;
+						}*/
+				ol#design-stories > li#news-app-story > figure > .right.two-up {
 					grid-column: 8 / 11;
 					}
-				ol#design-stories > li#news-app-story > figure > img.left.three-up {
+					/*ol#design-stories > li#news-app-story > figure > aside.right.two-up {
+						grid-column: 7 / 12;
+						}*/
+				ol#design-stories > li#news-app-story > figure > .left.three-up {
 					grid-column: 1 / 4;
 					}
-				ol#design-stories > li#news-app-story > figure > img.center.three-up {
+				ol#design-stories > li#news-app-story > figure > .center.three-up {
 					grid-column: 5 / 9;
 					margin-top: 12em;
 					}
+				ol#design-stories > li#news-app-story > figure > .right.three-up {
+					grid-column: 10 / 13;
+					margin-top: 28em;
+					}
 				ol#design-stories > li#news-app-story > figure > img.wide {
 					grid-column: 1 / 13;
+					}
+				ol#design-stories > li#news-app-story > figure > img#top-page {
+					margin-top: -12em;
+					}
+				ol#design-stories > li#news-app-story > figure > aside#choose-title-color-etc {
+					margin-top: -100em;
+					}
+				ol#design-stories > li#news-app-story > figure > img#world-page {
+					margin-top: -80em;
 					}
