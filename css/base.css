@@ -406,12 +406,12 @@ ol#design-stories {
 			font-weight: 400;
 			}
 		ol#design-stories > li > section.project-intro {
-			margin-bottom: 5em;
-			padding-bottom: 5.5em;
+			margin-bottom: 0;
+			padding-bottom: 3.5em;
 			font-weight: 500;
 			font-size: 1.5rem;
 			line-height: 1.333;
-			background: url(../img/line-decoration-white.svg) center bottom no-repeat;
+			/*background: url(../img/line-decoration-white.svg) center bottom no-repeat;*/
 			}
 			ol#design-stories > li > section.project-intro.not-yet-visible {
 				
@@ -421,7 +421,8 @@ ol#design-stories {
 					transform: translateY(100px);
 					}
 			ol#design-stories > li > section.project-intro > * {
-				transition: opacity 1s ease 0, transform 1s ease 0;
+				opacity: 1;
+				transition: opacity 1s ease 0s, transform 1s ease 0s;
 				}
 				ol#design-stories > li > section.project-intro > * + * {
 					transition-delay: .3s;
@@ -457,6 +458,9 @@ ol#design-stories {
 			font-size: 2rem;
 			text-decoration: none;
 			text-align: center;
+			background-position: center -.25em;
+			transition: color .25s ease 0s, background-position .1s ease .2s;
+			/*overflow: hidden;*/
 			}
 			ol#design-stories > li > a.view-samples:link::after {
 				display: block;
@@ -489,7 +493,7 @@ ol#design-stories {
 				padding-bottom: 0;
 				opacity: 0;
 				transform: translateY(-100px);
-				transition: all .5s ease 0;
+				transition: all .5s ease 0, opacity 0;
 				overflow: hidden;
 				}
 				.js ol#design-stories > li.expanded > figure {
@@ -499,12 +503,14 @@ ol#design-stories {
 					opacity: 1;
 					transform: translateY(0);
 					overflow: visible;
+					transition: all .5s ease 0;
 					}
 				.js ol#design-stories > li.expanded > a.view-samples {
 					position: -webkit-sticky;
 					position: sticky;
 					top: -1.5em;
 					color: transparent;
+					background: url(../img/line-decoration-white.svg) center .65em no-repeat;
 					z-index: 100;
 					}
 					.js ol#design-stories > li.expanded > a.view-samples:link::after {
