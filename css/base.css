@@ -618,9 +618,18 @@ ol#design-stories {
 			ol#design-stories > li#mazamas-story > .title > h1 > .point {
 				left: .35em;
 				}
+			ol#design-stories > li#mazamas-story > a.view-samples:link::after {
+				background-image: url(../img/portfolio/plus-circle-mazamas.svg);
+				}
 		ol#design-stories > li#news-app-story {
 			background: #3D1218;
 			}
+			ol#design-stories > li#news-app-story > a.view-samples:link::after {
+				background-image: url(../img/portfolio/plus-circle-news-app.svg);
+				}
 		ol#design-stories > li#occ-story {
 			background: #2C353A;
 			}
+			ol#design-stories > li#occ-story > a.view-samples:link::after {
+				background-image: url(../img/portfolio/plus-circle-occ.svg);
+				}
