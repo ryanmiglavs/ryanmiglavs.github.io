@@ -31,6 +31,13 @@ body#portfolio {
 			top: calc(35% + 2.5rem);
 			font-size: 200%;
 			}
+body#portfolio > footer {
+	
+	}
+	body#portfolio > footer > #signing-off {
+		left: 10%;
+		top: 10%;
+		}
 
 ol#design-stories {
 	
