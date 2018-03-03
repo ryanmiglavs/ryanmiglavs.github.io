@@ -119,6 +119,11 @@ body#portfolio {
 			body#portfolio > header > h1 > strong {
 				font-size: 10rem;
 				}
+			@media all and (max-height: 800px) {
+				body#portfolio > header > h1 {
+					top: 16%;
+					}
+				}
 		body#portfolio > header > h3 {
 			bottom: 11em;
 			}
@@ -142,15 +147,10 @@ body#portfolio {
 		}
 		body#portfolio > section#subheader > h1 {
 			top: 30%;
-			left: 35%;
+			left: 30%;
 			}
-			@media all and (max-height: 800px) {
-				body#portfolio > header > h1 {
-					top: 16%;
-					}
-				}
 		body#portfolio > section#subheader > h2 {
-			left: 35%;
+			left: 30%;
 			top: calc(30% + 1.5rem);
 			}
 body#portfolio > footer {

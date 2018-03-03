@@ -22,15 +22,23 @@ body#portfolio {
 		
 		}
 		body#portfolio > section#subheader > h1 {
-			left: 41%;
+			left: 35%;
 			top: 35%;
 			font-size: 300%;
 			}
 		body#portfolio > section#subheader > h2 {
-			left: 40.9%;
+			left: 35%;
 			top: calc(35% + 2.5rem);
 			font-size: 200%;
 			}
+			@media all and (min-width: 1800px) {
+				body#portfolio > section#subheader > h1 {
+					left: 41%;
+					}
+				body#portfolio > section#subheader > h2 {
+					left: 40.9%;
+					}
+				}
 body#portfolio > footer {
 	
 	}

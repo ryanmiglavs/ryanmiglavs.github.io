@@ -16,6 +16,16 @@ body#portfolio {
 				height: 6em;
 				}
 
+body#portfolio > section#subheader {
+	
+	}
+	body#portfolio > section#subheader > h1 {
+		top: 30%;
+		left: 35%;
+		}
+	body#portfolio > section#subheader > h2 {
+		left: 35%;
+		}
 
 ol#design-stories > li > .title {
 	margin-bottom: 11em;
