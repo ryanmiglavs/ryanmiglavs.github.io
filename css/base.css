@@ -156,7 +156,8 @@ ul#manifesto {
 				margin: 0 auto 1.6em;
 				}
 			ul#manifesto > li > figcaption > h5,
-			ol#design-stories > li > figure > figcaption > h5 {
+			ol#design-stories > li > figure > figcaption > h5,
+			ol#design-stories > li > figure > aside > h5 {
 				/* ❧ */
 				margin: 1.4em 0 0 0;
 				font-size: 200%;
