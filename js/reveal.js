@@ -31,7 +31,7 @@
 					if ( window.pageYOffset > (offsetTop + intro.offsetHeight) ) {
 						if (!prefersReducedMotion.matches && isSmoothScrollSupported) {
 							window.scrollTo({
-								'behavior': 'smooth',
+								//'behavior': 'smooth',
 								'left': 0,
 								'top': offsetTop,
 							});
