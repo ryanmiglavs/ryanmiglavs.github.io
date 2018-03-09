@@ -73,6 +73,12 @@ ol#design-stories > li#mazamas-story {
 		text-indent: -3.5rem;
 		line-height: 1.55;
 		}
+	ol#design-stories > li#mazamas-story > figure#mazamas-community {
+		
+		}
+		ol#design-stories > li#mazamas-story > figure#mazamas-community > figcaption {
+			margin-top: 3em;
+			}
 ol#design-stories > li#news-app-story {
 	
 	}

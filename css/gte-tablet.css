@@ -217,6 +217,17 @@ ol#design-stories {
 			ol#design-stories > li > figure > aside {
 				grid-column: 3 / 5;
 				}
+		ol#design-stories > li#mazamas-story {
+			
+			}
+			ol#design-stories > li#mazamas-story > figure#mazamas-community {
+				
+				}
+				ol#design-stories > li#mazamas-story > figure#mazamas-community > figcaption {
+					grid-row: 2;
+					grid-column: 2 / 3;
+					margin-top: 1em;
+					}
 		ol#design-stories > li#news-app-story {
 			
 			}
