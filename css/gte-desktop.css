@@ -6,14 +6,14 @@ body#portfolio {
 		
 		}
 		body#portfolio > header > h3 {
-			bottom: 12em;
+			
 			}
 		body#portfolio > header > ul#clients {
 			
 			}
 			body#portfolio > header > ul#clients > li {
-				width: 9em;
-				height: 6em;
+				width: 8em;
+				height: 5em;
 				}
 
 body#portfolio > section#subheader {

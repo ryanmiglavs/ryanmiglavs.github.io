@@ -106,7 +106,7 @@ body#portfolio {
 	
 	}
 	body#portfolio > header {
-		min-height: 700px;
+		min-height: 660px;
 		}
 		body#portfolio > header::after {
 			bottom: 1.8em;
@@ -125,16 +125,16 @@ body#portfolio {
 					}
 				}
 		body#portfolio > header > h3 {
-			bottom: 11em;
+			bottom: 10em;
 			}
 		body#portfolio > header > ul#clients {
-			bottom: 7em;
+			bottom: 6em;
 			}
 			body#portfolio > header > ul#clients > li {
-				width: 12%;
-				height: 6em;
-				margin-left: 2em;
-				margin-right: 2em;
+				width: 10%;
+				height: 5em;
+				margin-left: 1.25em;
+				margin-right: 1.25em;
 				}
 				body#portfolio > header > ul#clients > li#uo {
 					display: inline-block;
