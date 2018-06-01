@@ -436,6 +436,7 @@ body#portfolio > footer {
 		body#portfolio > footer > #signing-off a:visited {
 			color: #1c4466;
 			text-decoration: none;
+			font-weight: normal;
 			border-bottom: 1px solid #000;
 			transition: all .25s ease;
 			}
@@ -624,6 +625,7 @@ ol#design-stories {
 				text-align: center;
 				}
 			ol#design-stories > li > figure > a.site-link {
+				display: block;
 				margin: 0 auto 3rem auto;
 				}
 		ol#design-stories > li#mazamas-story {

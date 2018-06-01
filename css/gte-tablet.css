@@ -228,6 +228,12 @@ ol#design-stories {
 					grid-column: 2 / 3;
 					margin-top: 1em;
 					}
+			ol#design-stories > li#mazamas-story > figure#mazamas-site-link {
+				display: block;
+				}
+				ol#design-stories > li#mazamas-story > figure#mazamas-site-link > a.site-link {
+					width: 12em;
+					}
 		ol#design-stories > li#news-app-story {
 			
 			}
