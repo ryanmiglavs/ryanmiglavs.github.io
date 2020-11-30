@@ -21,6 +21,9 @@ ul#manifesto {
 	ul#manifesto > li {
 		height: 110vh;
 		}
+		ul#manifesto > li a.site-link {
+			font-size: 1.25rem;
+			}
 		ul#manifesto > li > figure {
 			position: absolute;
 			left: 0;
@@ -75,11 +78,10 @@ ul#manifesto {
 				right: auto;
 				}
 		ul#manifesto > li#tell-stories > figure {
-			padding-top: 22%;
+			padding-top: 32vh;
 			}
 			ul#manifesto > li#tell-stories > figure > iframe {
 				width: 80%;
-				/*height: 70%;*/
 				}
 		ul#manifesto > li#eat-and-drink > figure {
 			
